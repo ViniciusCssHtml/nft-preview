@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #0D192B;
+    padding-top: 50px;
+    font-family: "Outfit";
+}
+
+article{
+    background-color: #14253D;
+    border-radius: 10px;
+    max-width: 320px;
+}
+
+.container{
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+img{
+    display: block;
+}
+
+.image-equilibrium{
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+ 
+}
+
+.container-img{
+    position: relative;
+
+}
+
+.container-img::before{
+    display: none;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #00fff746;
+    position: absolute;
+    z-index: 200;
+    background-image: url('./images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container-img:hover::before{
+    display: block;
+}
+
+h1{
+    color: #fff;
+    font-size: 1.4rem;
+}
+p{
+    color: #8BA3C6;
+}
+
+.list-eth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-eth li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.eth{
+   color: #00fff7;
+   font-weight: bold;
+}
+.days{
+    color: #8BA3C6;
+}
+
+.avatar{
+    width: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.list-avatar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.jules{
+    color: #fff;
+  
+    cursor: pointer;
+}
+.jules:hover{
+    color: #00fff7;
+}
